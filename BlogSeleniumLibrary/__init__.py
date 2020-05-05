@@ -32,9 +32,6 @@ class  BlogSeleniumLibrary(SeleniumLibrary):
     def  __init__(self, timeout=5.0, implicit_wait=0.0,
                  run_on_failure='Capture Page Screenshot',
                  screenshot_root_directory=None):
-        SeleniumLibrary.__init__(self, timeout=5.0, implicit_wait=0.0,
-                 run_on_failure='Capture Page Screenshot',
-                 screenshot_root_directory=None)
         self.timeout = timestr_to_secs(timeout)
         self.implicit_wait = timestr_to_secs(implicit_wait)
         self.speed = 0.0
